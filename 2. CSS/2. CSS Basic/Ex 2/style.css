@@ -1,0 +1,45 @@
+﻿body {
+}
+table {
+    border-collapse:collapse;
+}
+th {
+    background-color:#52b506;
+    color:white;
+    border-bottom:1px solid grey;
+}
+#Name {
+    width:140px;
+}
+#City {
+    width:110px;
+}
+#Country {
+    width:130px;
+}
+#IsPromoted {
+    width:80px;
+}
+td, th {
+    font-family:Calibri;
+    border-right:1px solid lightgrey;
+    padding:3px 8px;
+    text-align:left;
+    font-weight:400;
+}
+tr:nth-child(2n) {
+    background-color:#ececd8;
+    
+}
+span {
+    margin-left:8px;
+}
+.flag {
+	width: 16px;
+	height: 11px;
+	background:url(flags.png) no-repeat;
+}
+.flag.flag-de {background-position: -80px -33px}
+.flag.flag-gb {background-position: -176px -44px}
+.flag.flag-mx {background-position: -192px -99px}
+

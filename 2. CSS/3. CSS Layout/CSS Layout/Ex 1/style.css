@@ -1,0 +1,35 @@
+﻿/*RESET*/
+div,ul, li {
+    margin:0;
+    padding:0;
+}
+
+/*TREE VIEW*/
+ul {
+list-style-type:none;
+width:200px;
+}
+
+ul li a:hover {
+    text-decoration:underline;
+}
+
+    ul li a {
+        text-decoration:none;
+        color:black;
+    }
+
+ul li ul {
+    display:none;
+}
+
+    ul li:hover > ul {
+    display:block;
+    margin-left:15px;
+    }
+
+    ul li ul li a {
+        color:grey;
+    }
+
+    

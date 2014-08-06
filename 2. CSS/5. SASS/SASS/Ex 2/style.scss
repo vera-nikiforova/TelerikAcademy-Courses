@@ -1,0 +1,35 @@
+$items: 6;
+$width: 860px;
+$aspectRatio: 16 / 10;
+$thumbnailWidth: ($width - ($items - 1) * 10) / $items;
+$thumbnailHeight: $thumbnailWidth / $aspectRatio;
+$photoWidth: $width;
+$photoHeight: $photoWidth / $aspectRatio;
+
+body {
+	section {
+		form {
+			label {
+				img {
+					width:$thumbnailWidth;
+					height:$thumbnailHeight;
+					display:inline-block;
+				}
+			}
+			input {
+				visibility: hidden;
+				margin:0;
+				padding:0;
+				&:checked + img {
+					display:block;
+					width:$width;
+					height:$photoHeight;
+					position:absolute;
+				}
+			}
+			img.bigpic {
+				display:none;
+			}
+		}
+	}
+}

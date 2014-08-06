@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Calculator</title>
+    <meta  charset="utf-8"/>
+    <link  rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div>
+        <div class="main-menu">
+            <ul>
+                <li><span class="keyboard-shortcut">V</span>iew</li>
+                <li><span class="keyboard-shortcut">E</span>dit</li>
+                <li><span class="keyboard-shortcut">H</span>elp</li>
+            </ul>
+        </div>
+        <div>
+        <form class="content">
+            <div id="result">
+                <input type="text" value="8854455"/>
+            </div>
+            <div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                        </tr>
+                        <tr>
+                            <td class="grey">63</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="grey">47</td>
+                            <td></td>
+                            <td></td>
+                            <td class="grey">32</td>
+                        </tr>
+                        <tr>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                        </tr><tr>
+                            <td class="grey">31</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="grey">15</td>
+                            <td></td>
+                            <td></td>
+                            <td class="grey">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <div class="radio_buttons">
+                    <input type="radio" value="Hex" name="System" id="Hex"/>
+                    <label for="Hex">Hex</label>
+                    <input type="radio" value="Dec" name="System" id="Dec"/>
+                    <label for="Dec">Dec</label>
+                    <input type="radio" value="Oct" name="System" id="Oct"/>
+                    <label for="Oct">Oct</label>
+                    <input type="radio" value="Bin" name="System" id="Bin"/>
+                    <label for="Bin">Bin</label>
+                </div>
+                <div class="buttons">
+                    <div>
+                        <input class="Flat"type="button" value="  " disabled="disabled"/>
+                        <input class="Operators" type="button" value="Mod" />
+                        <input class="Flat" type="button" value="A" disabled="disabled"/>
+                        <input class="Memory" type="button" value="MC" />
+                        <input class="Memory" type="button" value="MR" />
+                        <input class="Memory" type="button" value="MS" />
+                        <input class="Memory" type="button" value="M+" />
+                        <input class="Flat" type="button" value="M-" />
+                    </div>
+                    <div>
+                        <input class="Operators"type="button" value="(" />
+                        <input class="Operators"type="button" value=")" />
+                        <input class="Flat" type="button" value="B" disabled="disabled" />
+                        <input class="Operators"type="button" value="  " id="arrow"/>
+                        <input class="Operators"type="button" value="CE" />
+                        <input class="Operators"type="button" value="C" />
+                        <input class="Operators"type="button" value="±" />
+                        <input class="Flat"type="button" value="√" disabled="disabled"/>
+                    </div>
+                    <div>
+                        <input class="Operators"type="button" value="Rol" />
+                        <input class="Operators"type="button" value="RoR" />
+                        <input class="Flat" type="button" value="C" disabled="disabled"/>
+                        <input class="Numbers" type="button" value="7" />
+                        <input class="Numbers" type="button" value="8" />
+                        <input class="Numbers" type="button" value="9" />
+                        <input class="Operators"type="button" value="/" />
+                        <input class="Flat"type="button" value="%" disabled="disabled" />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="radio_buttons">
+                        <input type="radio" value="Qword" name="Byte" id="Qword"/>
+                        <label for="Qword">Qword</label>
+                        <input type="radio" value="Dword" name="Byte" id="Dword"/>
+                        <label for="Dword">Dword</label>
+                        <input type="radio" value="Word" name="Byte" id="Word"/>
+                        <label for="Word">Word</label>
+                        <input type="radio" value="Byte" name="Byte" id="Byte"/>
+                        <label for="Byte">Byte</label>
+                    </div>
+                <div class="buttons">
+                    <div>
+                        <input class="Operators"type="button" value="Or" />
+                        <input class="Operators"type="button" value="Xor" />
+                        <input class="Flat" type="button" value="D" disabled="disabled"/>
+                        <input class="Numbers" type="button" value="4" />
+                        <input class="Numbers" type="button" value="5" />
+                        <input class="Numbers" type="button" value="6" />
+                        <input class="Operators"type="button" value="-" />
+                        <input class="Flat"type="button" value="1/χ" disabled="disabled" />
+                    </div>
+                    <div  class="buttons" id="last_rows">
+                        <div>
+                            <input class="Operators"type="button" value="Lsh" />
+                            <input class="Operators"type="button" value="Reh" />
+                            <input class="Flat" type="button" value="E" disabled="disabled"/>
+                            <input class="Numbers" type="button" value="1" />
+                            <input class="Numbers" type="button" value="2" />
+                            <input class="Numbers" type="button" value="3" />
+                            <input class="Operators" type="button" value="-" />
+                        </div>
+                        <div>
+                            <input class="Operators" type="button" value="Not" />
+                            <input class="Operators" type="button" value="And" />
+                            <input class="Flat" type="button" value="F" disabled="disabled"/>
+                            <input class="Numbers" id="zero" type="button" value="0" />
+                            <input class="Flat"type="button" value="." disabled="disabled"/>
+                            <input class="Operators" type="button" value="+" />
+                        </div>
+                    </div>
+                    <div class="buttons" id="Total">
+                        <input class="Operators" type="button" value="=" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
+

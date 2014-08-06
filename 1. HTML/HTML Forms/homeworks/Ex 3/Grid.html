@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Grid</title>
+    <meta charset="utf-8"/>
+    <style type="text/css">
+        table {
+            border-collapse:collapse;
+        }
+
+        thead, tfoot {
+            background-color:lightgray;
+        }
+        tr th {
+            text-align:left;
+            font-family:Arial;
+            font-weight:normal;
+        }
+        td, th {
+            border:1px solid grey;   
+            padding:4px; 
+        }
+            td#Counter {
+                border-left:none;
+                text-align:right;
+            }
+            td#PageNum {
+                border-right:none;
+            }
+            td #ProductID {
+                width:30px;
+            }
+            td #Productname {
+                width:100px;
+            }
+            td #UnitPrice {
+                width:60px;
+            }
+            td #Quiantity {
+                width:100px;
+            }
+            td #UnitStock {
+                width:70px;
+            }
+            td #Filter, td #Filter1, td #Filter2 {
+                width:22px;
+                height:22px;
+                background:url('images/Filter.svg') no-repeat center;
+                background-size:100%;
+                color:transparent;
+                border:1px;
+            }
+                td #Filter:active, td #Filter1:active, td #Filter2:active {
+                    border: 1px solid white;
+                }
+        input[name=FirstPage] {
+            width:15px;
+            background:url('images/Icon_First.png') no-repeat center;
+            color:transparent;
+            background-size:15px;
+            border:1px;
+        }
+            input[name=FirstPage]:active {
+                border: 1px solid white;
+            }
+        input[name=LastPage] {
+            width:15px;
+            background:url('images/Icon_Last.png') no-repeat center;
+            color:transparent;
+            background-size:15px;
+            border:1px;
+        }
+            input[name=LastPage]:active {
+                border: 1px solid white;
+            }
+        input[name=NextPage] {
+            width:15px;
+            background:url('images/Icon_Next.png') no-repeat center;
+            color:transparent;
+            background-size:15px;
+            border:1px;
+        }
+            input[name=NextPage]:active {
+                border: 1px solid white;
+            }
+        
+        input[name=PreviousPage] {
+            width:15px;
+            background:url('images/Icon_Previous.png') no-repeat center;
+            color:transparent;
+            background-size:15px;
+            border:1px;
+        }
+            input[name=PreviousPage]:active {
+                border:1px solid white;
+            }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="6">
+                       Drag a column header and drop it here to group by that column 
+                    </th>
+                </tr>
+                <tr>
+                    <th>ProductID</th>
+                    <th>Product name</th>
+                    <th>Unit price</th>
+                    <th>Quantity per unit</th>
+                    <th>Units in stock</th>
+                    <th>Discontinued</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="ProductID" name="ProductID"/>
+                    </td>
+                    <td>
+                        <input type="text" id="Productname" name="Productname"/>
+                    </td>
+                    <td>
+                        <input type="text" id="UnitPrice" name="UnitPrice"/>
+                        <input type="button" name="Filter" id="Filter" value="Filter"/>
+                    </td>
+                    <td>
+                        <input type="text" id="Quiantity" name="Quantity"/>
+                    </td>
+                    <td>
+                        <input type="text" id="UnitStock" name="UnitStock"/>
+                        <input type="button" name="Filter1" id="Filter1" value="Filter"/>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="Discontinued" disabled="disabled"/>
+                        <input type="button" name="Filter2" id="Filter2" value="Filter"/>
+                    </td>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="4" id="PageNum">
+                        <input type="button" name="FirstPage" value="FirstPage" />
+                        <input type="button" name="PreviousPage" value="PreviousPage"/>
+                        <a href="?Page=1">1</a>,
+                        <a href="?Page=2">2</a>,
+                        <a href="?Page=3">3</a>,
+                        <a href="?Page=4">4</a>,
+                        <a href="?Page=1">5</a>,
+                        <a href="?Page=2">6</a>,
+                        <a href="?Page=3">7</a>,
+                        <a href="?Page=4">8</a>,
+                        <a href="?Page=4">9</a>,
+                        <a href="?Page=10">10</a> ...
+                        <input type="button" name="NextPage" value="NextPage" />
+                        <input type="button" name="LastPage" value="LastPage" />
+                        <label>Page size</label>
+                        <select>
+                            <option>10</option>
+                            <option>50</option>
+                            <option>100</option>
+                            <option>150</option>
+                        </select>
+                    </td>
+                    <td colspan="2" id="Counter">335104 items in 33511 pages</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Chai</td>
+                    <td>$18.00</td>
+                    <td>10 boxes x 20 bags</td>
+                    <td>39</td>
+                    <td>
+                        <input type="checkbox" disabled="disabled"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Chai</td>
+                    <td>$18.00</td>
+                    <td>10 boxes x 20 bags</td>
+                    <td>39</td>
+                    <td>
+                        <input type="checkbox" disabled="disabled"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Chai</td>
+                    <td>$18.00</td>
+                    <td>10 boxes x 20 bags</td>
+                    <td>39</td>
+                    <td>
+                        <input type="checkbox" disabled="disabled"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Chai</td>
+                    <td>$18.00</td>
+                    <td>10 boxes x 20 bags</td>
+                    <td>39</td>
+                    <td>
+                        <input type="checkbox" disabled="disabled" checked="checked"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Chai</td>
+                    <td>$18.00</td>
+                    <td>10 boxes x 20 bags</td>
+                    <td>39</td>
+                    <td>
+                        <input type="checkbox" disabled="disabled"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Chai</td>
+                    <td>$18.00</td>
+                    <td>10 boxes x 20 bags</td>
+                    <td>39</td>
+                    <td>
+                        <input type="checkbox" disabled="disabled"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Chai</td>
+                    <td>$18.00</td>
+                    <td>10 boxes x 20 bags</td>
+                    <td>39</td>
+                    <td>
+                        <input type="checkbox" disabled="disabled"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Chai</td>
+                    <td>$18.00</td>
+                    <td>10 boxes x 20 bags</td>
+                    <td>39</td>
+                    <td>
+                        <input type="checkbox" disabled="disabled"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Chai</td>
+                    <td>$18.00</td>
+                    <td>10 boxes x 20 bags</td>
+                    <td>39</td>
+                    <td>
+                        <input type="checkbox" disabled="disabled" checked="checked"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Chai</td>
+                    <td>$18.00</td>
+                    <td>10 boxes x 20 bags</td>
+                    <td>39</td>
+                    <td>
+                        <input type="checkbox" disabled="disabled"/>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+</body>
+</html>

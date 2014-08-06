@@ -1,0 +1,135 @@
+﻿body {
+    background-color:#f1f1f1;
+    border:1px solid #212121;
+    margin:0px;
+    padding:0px;
+    font-size:13px;
+}
+
+body, h1, h2, a {
+    font-family:Verdana, Arial, sans-serif;
+}
+
+
+#left-aside {
+    border: 1px solid #f7f7f7;
+    width:170px;
+    float:left;
+    padding:3px;
+}
+
+    #left-aside img {
+        display:inline-block;
+        width:20px;
+        height:20px;
+        float:left;
+        margin:10px 5px 0 0;
+    }
+    #left-aside #home {
+        color:black;
+    }
+
+    #left-aside h2 {
+        color: #951816;
+        font-size:13px;
+        margin:0;
+        margin-top:10px;
+    }
+
+    #left-aside a {
+        display:block;
+        text-decoration: none;
+        color: #282828;
+    }
+
+
+#main-area {
+    width:822px;
+    border:1px solid #a6a6a6;
+    padding:7px;
+    margin:auto;
+    background-color:white;
+    float:left;
+}
+
+    #main-area header h1 {
+        margin:10px 0;
+    }
+
+    .buttons {
+        padding:3px;
+        display:inline-block;
+        width:100px;
+        border:1px solid #2f2f2f;
+        text-decoration:none;
+        text-align:center;
+        color:black;
+    }
+
+    #main-area section {
+        margin:20px 0;
+    }
+
+    #main-area section img{
+        float:left;
+        padding:15px;
+    }
+
+    #main-area section:first-of-type p {
+        font-weight:bold;
+    }
+
+    hr {
+        color:#919191;
+    }
+
+    .grey-bg {
+        padding-left:5px;
+        font-size:13px;
+        background-color: #808080;
+        border: 1px solid #787878;
+        color: white;
+        margin:0;
+    }
+
+    
+.red-link {
+    color:#a1302e;
+    text-decoration:underline;
+}
+
+#right-aside {
+    float:left;
+    width:170px;
+    display:block;
+    text-align:center;
+}
+
+    #right-aside section {
+        border:1px solid #a6a6a6;
+        margin:1px;
+        background-color:white;
+    }
+
+        #right-aside section img {
+        
+        }
+
+    #right-aside a.red-link  {
+        padding:2px 8px;
+        display:block;
+        text-align:center;
+        font-size:12px;
+    }
+
+    #right-aside input[type=search] {
+        width:100px;
+    }
+
+.left-btn {
+    background:url("leftarrow.png") no-repeat left center;
+}
+
+.right-btn {
+    background:url("rightarrow.png") no-repeat right center;
+}

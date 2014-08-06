@@ -1,0 +1,33 @@
+﻿body {
+    background-color:#a9a9a9;
+}
+h1 {
+    color:#fafad2;
+}
+header, footer{
+    text-align:center;
+}
+article header, article footer {
+    text-align:left;
+}
+article footer {
+    font-size:12px;
+}
+.current {
+    background-color:#d3d3d3;
+}
+
+li a {
+    color:white;
+}
+ul li {
+    list-style-type:none;
+}
+    ul li:last-child {
+        text-decoration:underline;
+    }
+a {
+    text-decoration:none;
+    color:inherit;
+}
+    

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YellowSite", "YellowSite.csproj", "{8F66A565-D1A0-42C0-B29F-D3363EC2A4FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F66A565-D1A0-42C0-B29F-D3363EC2A4FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F66A565-D1A0-42C0-B29F-D3363EC2A4FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F66A565-D1A0-42C0-B29F-D3363EC2A4FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F66A565-D1A0-42C0-B29F-D3363EC2A4FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

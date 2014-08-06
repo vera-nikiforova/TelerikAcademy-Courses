@@ -1,0 +1,16 @@
+body section form label img {
+  width: 135px;
+  height: 84.375px;
+  display: inline-block; }
+body section form input {
+  visibility: hidden;
+  margin: 0;
+  padding: 0; }
+  body section form input:checked + img {
+    display: block;
+    width: 860px;
+    height: 537.5px;
+    position: absolute; }
+body section form img.bigpic {
+  display: none; }
+

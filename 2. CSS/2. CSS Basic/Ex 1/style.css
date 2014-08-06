@@ -1,0 +1,39 @@
+﻿body {
+    background-color:gray;
+    font-family:Tahoma, Arial,'Times New Roman';
+}
+th {
+    color:darkgray;
+    font-size:20px;
+    font-weight:normal;
+    text-align:left;
+}
+td {
+    font-size:13px;
+    padding:8px;
+}
+td:first-child {
+    color:lightgray;
+    width:150px;
+    font-style:italic;
+}
+.top {
+    vertical-align:top;
+    margin:0;
+}
+#support {
+    padding-top:1px;
+    color:red;
+}
+.yellow {
+    color:lightyellow;
+}
+.grey {
+    color:darkgrey;
+}
+.answered {
+    color:orange;
+}
+#green_spot {
+    color:lightgreen;
+}
